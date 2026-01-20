@@ -47,7 +47,7 @@ Vibe Kanban is a modern project management tool designed specifically for develo
 
 **🎛️ Developer Tools**
 - Browse and validate git repositories from filesystem
-- Open task worktrees in your preferred editor (VS Code, Cursor, Windsurf, IntelliJ, Zed)
+- Open task worktrees in your preferred editor (VS Code, VSCodium, Cursor, Windsurf, IntelliJ, Zed)
 - Real-time execution monitoring and process control
 - Stop running processes individually or all at once
 - Sound notifications for task completion
