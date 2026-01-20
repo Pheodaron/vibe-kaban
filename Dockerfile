@@ -13,7 +13,9 @@ RUN apk add --no-cache \
 ENV RUSTFLAGS="-C target-feature=-crt-static"
 
 # Install Rust
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+COPY ./rustup-init.sh .
+RUN cat rustup-init.sh | sh -s -- -y
+# RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 ARG POSTHOG_API_KEY
